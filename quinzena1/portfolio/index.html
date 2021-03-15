@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="fixed">
         <div class="navbar">
-            <a href="#" class="logo">Luis Andrade</a>
+            <a href="#" class="logo">Portfolio</a>
             <ul class="nav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
@@ -22,26 +24,148 @@
         </div>
     </header>
     <div class="banner-area" id="home">
-        <div class="text-part">
-            <h1>Home Area</h1>
+        <div class="imagem__perfil">
+            <img src="Img/imgintro.jpg" alt="Uma foto minha">
+        </div>
+
+
+
+        <div class="intro">
+            <h1 class="titulo">
+                Olá, me chamo <strong>Luis Andrade</strong>
+            </h1>
+            <p class="subtitle">Bem vindo meu Portfolio! <br> Aqui está
+                algumas informações sobre mim <br> e projetos que estou realizando durante o curso <br> da
+                curso na <strong class="labenu">Labenu</strong>
+            </p>
+            <a href="#projetos" class="projetos-btn">Veja Meus Projetos</a>
+        </div>
+    </div>
+
+
+    <section class="sobre-area" id="sobre">
+        <h1 class="titulo__sobre__mim">Quem eu sou</h1>
+
+        <div class="services">
+            <div class="service">
+                <h3>Sobre Mim</h3>
+                <p>
+                    Me interessei por programação quando eu tinha 15 anos,
+                    por conta de varios jogos e videos que saiam no
+                    youtube sobre <i>Hacking</i>
+                    ou coisas do tipo. Lembro de ter jogado <em>Watch Dogs</em>
+                    e querer
+                    fazer a mesma coisa ( '-').
+                    Mas por fim, acabei me
+                    interessando por areas na programação
+                    onde eu tivesse mais liberdade de criar e usar
+                    minha criatividade, e por querer aprender mais, sou aluno da <strong class="labenu">Labenu</strong>
+                    no curso noturno de Front-end Development.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Skills</h3>
+                <p>
+                    •• Gosto bastante de desafios onde preciso usar o racicionio
+                    logico e sou bastante criativo ao lidar com problemas do cotidiano.
+
+                    •• Sou bastante esforçado e gosto bastante de pesquisar a mesma coisa
+                    em diversas fontes para ter certeza do que estou fazendo.
+
+                    •• Bastante paciente em aprender coisas que me prendem atenção
+                    (como programar por exemplo)
+
+                    •• Acredito que a empatia é uma Skill tambem, então considerei a colocar
+                    aqui :^)
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Jobs</h3>
+                <p>
+                    •• Empresa <em>Urbeluz-RR</em> como
+                    <em>Digitador</em> pelo programa <em>Jovem Aprendiz</em>.
+                    •• Empresa <em>Posto Cinco Estrelas</em> como atendente
+                    de loja de conveniencia.
+                    •• Empresa <em>Extremo Norte - RR</em> como Digitador
+                    para empresa terceirizada, fazendo preenchimento de informações
+                    sobre vacinação indigena.
+                    •• Sou aluno na Empresa <strong class="labenu">Labenu</strong>
+                    na area de desenvolvimento <em>Front-end</em> em turma noturna do curso.
+                </p>
+            </div>
 
         </div>
-    </div>
-    <div class="sobre-area" id="sobre">
-        <div class="text-part">
-            <h1>Sobre Area</h1>
+
+
+    </section>
+
+
+    <section class="proj-area" id="projetos">
+        <h1 class="titulo__meus__projetos">Meus projetos</h1>
+
+        <div class="projetos">
+            <div class="projeto">
+                <h3 class="header_projeto">Projeto Labenu</h3>
+                <a href="Projeto_labenu.html" target="_blank"><img src="Img/Labenu.png" alt="Meu Projeto da Labenu"
+                        width="300px"></a>
+            </div>
+
+            <div class="projeto">
+                <h3 class="header_projeto">Minha loja</h3>
+                <a href="Projeto_loja.html" target="_blank"> <img src="Img/Projeto_loja1.jpg" alt="Projeto Minha Loja"
+                        width="300px"></a>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="contact-area" id="contato"> -->
+    <div class="footer" id="contato">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3 class="logo-text">Me siga nas redes sociais</h3>
+                <br>
+                <ul>
+                    <a href="https://www.instagram.com/">
+                        <li>Instagram</li>
+                    </a>
+                    <a href="https://pt-br.facebook.com/">
+                        <li>Facebook</li>
+                    </a>
+                    <a href="https://github.com/">
+                        <li>Github</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h3 class="contato-text">
+                    Entre em contato!
+                </h3>
+                <form>
+                    <label>Nome</label>
+                    <input type="text">
+
+                    <label>E-mail</label>
+                    <input type="email">
+
+                    <label>Mensagem</label>
+                    <input class="emailbox" type="text">
+
+                    <button class="send-btn" type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
     </div>
-    <div class="proj-area" id="projetos">
-        <div class="text-part">
-            <h1>Projetos Area</h1>
-        </div>
-    </div>
-    <div class="contact-area" id="contato">
-        <div class="text-part">
-            <h1>Contact Area</h1>
-        </div>
-    </div>
+
+
+    </section>
+
+
 
 
 
