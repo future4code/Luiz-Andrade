@@ -58,8 +58,9 @@ div>p:first-child {
     align-items: center;
     flex-direction: column;
 }
-.icone {
+img.icone {
     height: 15px;
+    width: auto;
 }
 
 
@@ -147,4 +148,8 @@ td button:hover{
 input{
   outline: 0;
   border-width: 0 0 2px;
+}
+.botao-div{
+    text-align: center;
+    padding-top: 200px;
 }
