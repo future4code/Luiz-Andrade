@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
 }
 h2 {
     background-color: #fe7e02;
@@ -140,4 +141,8 @@ td button {
 
 td button:hover{
     background-color: #c5ac3d;
+}
+input{
+  outline: 0;
+  border-width: 0 0 2px;
 }
