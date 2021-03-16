@@ -33,9 +33,10 @@ div>p:first-child {
     display: inline;
 }
 
-div img{
-    background: black;
-}
+/* div img{
+    
+
+} */
 
 .botao-amarelo {
     background-color: #ffaf43;
@@ -59,7 +60,6 @@ div img{
 }
 .icone {
     height: 15px;
-    background-color: #ffffff;
 }
 
 
@@ -109,6 +109,8 @@ div:last-child {
 table {
     width: 60%;
     margin: 0 auto;
+    text-align: center;
+    padding-left: 70px;
 }
 
 td button {
