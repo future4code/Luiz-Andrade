@@ -3,7 +3,6 @@
   *  ESTILOS GERAIS 
   *
   **/
-
 * {
     margin: 0;
     padding: 0;
@@ -59,7 +58,6 @@ div img {
     height: 15px;
 }
 
-
 /** 
   *
   *  ESTILOS HOME 
@@ -73,16 +71,20 @@ div img {
 
 #container-de-descricao>ol {
     padding: 15px 0px;
+    
 }
 
 #container-para-comprar {
     background-color: #e7eb90;
+   
+    
 }
 
 #container-para-comprar>p {
     color: #c44f00;
     padding: 100px 0;
     font-size: 60px;
+    display: block;
 }
 
 
