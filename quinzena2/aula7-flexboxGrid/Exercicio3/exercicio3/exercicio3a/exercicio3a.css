@@ -1,0 +1,186 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* ======= reset ======== */
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  color: white;
+}
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+#top-container {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+}
+
+.green-background {
+  background-color: green;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellow-background {
+  background-color: yellow;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======  Top container ========= */
+
+.pink-background {
+  background-color: fuchsia;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* =========== conteudo rosa ============ */
+
+#middle-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#content2 {
+  width: 50%;
+}
+
+#vertical-middle-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.blue-background {
+  background-color: blue;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-background {
+  background-color: red;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightgreen-background {
+  background-color: lightgreen;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ============== content meio ============== */
+
+footer {
+  bottom: 0;
+  width: 100%;
+}
+.purple-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  height: 49px;
+}
