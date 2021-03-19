@@ -98,36 +98,76 @@ body {
 }
 /* ============== header ================= */
 
-.top-container {
+#top-container {
   display: grid;
-  grid-column: 1/4;
+  grid-template-columns: 1fr 3fr;
+  grid-auto-rows: 5vh;
 }
 
 .green-background {
   background-color: green;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .yellow-background {
   background-color: yellow;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
-/* ================================== */
+/* ===============Rosa=================== */
 .pink-background {
+  display: grid;
+  grid-template-rows: 450px;
   background-color: fuchsia;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* ============= meio ============== */
+#middle-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 
 .blue-background {
   background-color: blue;
+  display: grid;
+  grid-template-rows: 220px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .red-background {
   background-color: red;
+  display: grid;
+  grid-template-rows: 110px;
+  justify-items: center;
+  align-items: center;
 }
 
 .lightgreen-background {
   background-color: lightgreen;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 110px;
 }
 
+/* =============footer============== */
+footer {
+  bottom: 0;
+  width: 100%;
+}
 .purple-background {
   background-color: purple;
+  height: 49px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
