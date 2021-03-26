@@ -1,0 +1,168 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  border: 1px solid black;
+}
+
+#first-block {
+  background-color: red;
+  height: 20vh;
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+}
+/* ============= COMECO ================ */
+.Comeco {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.blue-block {
+  width: 30%;
+  height: 20vh;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellow-block {
+  width: 30%;
+  height: 20vh;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-block {
+  width: 30%;
+  height: 20vh;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== Meio ========== */
+.meio {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.black-block {
+  width: 47%;
+  height: 50vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ========== Fim ========== */
+.fim {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.white-block {
+  width: 30%;
+  height: 20vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media  650px */
+
+@media (max-width: 650px) {
+  .Comeco {
+    width: 100%;
+    height: 100vh;
+  }
+  .blue-block {
+    width: 45%;
+  }
+
+  .yellow-block {
+    width: 45%;
+  }
+
+  .green-block {
+    width: 95%;
+  }
+  .white-block {
+    width: 45%;
+  }
+  .black-block {
+    width: 45%;
+  }
+  .fim > div:nth-child(3) {
+    width: 95%;
+  }
+}
+
+/* Media  550px */
+@media (max-width: 550px) {
+  .Comeco {
+    width: 100%;
+    height: 140vh;
+  }
+  .blue-block {
+    width: 95%;
+  }
+  .yellow-block {
+    width: 95%;
+  }
+  .green-block {
+    width: 95%;
+  }
+  .white-block {
+    width: 95%;
+  }
+
+  .meio {
+    width: 100%;
+    height: 48vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+  }
+
+  .black-block {
+    width: 95%;
+    height: 20vh;
+  }
+
+  .fim {
+    height: 75vh;
+  }
+}
