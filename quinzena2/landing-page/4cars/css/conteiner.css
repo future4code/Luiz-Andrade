@@ -12,7 +12,18 @@ html {
   width: 0;
   background: transparent;
 }
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
 
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+}
 html,
 body,
 div,
@@ -182,8 +193,8 @@ p {
 .area-carros h2 {
   color: black;
   text-transform: uppercase;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 45px;
+  font-family: var(--ff-primary);
 }
 .text-carros {
   display: flex;
