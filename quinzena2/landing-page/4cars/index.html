@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/conteiner.css">
+    <title>Document</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
@@ -23,25 +23,53 @@
         <a href="#"><img src="imgs/4cars22.png" alt="Logo-4Cars"></a>
         <ul>
             <li><a href="#home">HOME</a></li>
-            <li><a href="#about">Sobre</a></li>
+            <li><a href="#carros">Sobre</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
+
     <div class="container">
         <section class="area-inicial" id="home">
-            <h1>Container inicial</h1>
+            <div class="text-home">
+                <h1>4CARS, Melhores automoveis</h1>
+                <p>
+                    Conforto, Segurança e Qualidade. Alugueis apartir de 40$/dia
+                </p>
+            </div>
+
+            <div id="input-home">
+
+                <input type="date" id="data-pegar">
+
+                <input type="date" id="data-deixar">
+
+                <select id="ddselect">
+                    <option>Selecione o Automovel</option>
+                    <option>Chevrolet</option>
+                    <option>Ford</option>
+                    <option>Gol</option>
+                    <option>Nissan</option>
+                </select>
+
+                <a href="" class="btn">Alugar Agora</a>
+            </div>
         </section>
 
-        <section class="area-sobre" id="about">
-            <h1>Container Secundario</h1>
+
+        <!-- Lista de Automoveis -->
+
+        <section class="area-carros" id="carros">
+            <div class="text-carros">
+                <h2>nossa lista de carros</h2>
+            </div>
         </section>
 
-        <section class="area-servi" id="servicos">
-            <h1>Container Terceiro</h1>
-        </section>
 
+
+
+        <!-- Contatos -->
         <section class="area-contat" id="contato">
             <h1>Container Quarto</h1>
         </section>
