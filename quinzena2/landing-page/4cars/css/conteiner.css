@@ -184,17 +184,18 @@ p {
 ===================================== */
 
 .area-carros {
-  background-color: #e7e7e7;
+  background-image: url(/4cars/imgs/sl3.jpg);
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 .area-carros h2 {
-  color: black;
+  color: white;
   text-transform: uppercase;
   font-size: 45px;
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
 }
 .text-carros {
   display: flex;
@@ -203,7 +204,14 @@ p {
   height: 15vh;
   padding-top: 100px;
 }
-
+.titulo__text::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  margin: 0.3em auto 1em;
+  background: #fff;
+}
 /* =====================================
 
 ===================================== */
