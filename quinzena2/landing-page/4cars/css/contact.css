@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+footer {
+  position: block;
+  bottom: 0;
+  width: 100%;
+  background-image: url(/4cars/imgs/2-layers.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main-content {
+  display: flex;
+  padding: 100px 0px 40px 0px;
+}
+/* posicionamento das boxes dentro da div prncipal */
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* espaço entre os conteudos */
+.box .content {
+  margin: 20px 0 0 0;
+}
+.left .content p {
+  text-align: justify;
+}
+
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+.left .content .social a {
+  padding: 0 2px;
+}
+/* estilização dos blocos onde estão
+as animações Font Awes. */
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover {
+  background: #ff5c5c;
+}
+/* estilização dos blocos onde estão
+as animações (do meio) Font Awes. */
+.center .content .fas {
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover {
+  background: #ff5c5c;
+}
+
+/* estilização das divs (direita). */
+.center .content .text {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+/* espaçamento das divs do meio  */
+.center .content .phone {
+  margin: 10px 0;
+}
+
+/* estilização das caixas de msg */
+.right form .text {
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg {
+  margin-top: 10px;
+}
+.right form input,
+.right form textarea {
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus {
+  outline-color: #ff5c5c;
+}
+.right form input {
+  height: 35px;
+}
+/* estilização botão footer */
+.right form .btn2 {
+  margin-top: 10px;
+}
+.right form .btn2 button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #ff5c5c;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.right form .btn2 button:hover {
+  background: #000;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    height: 110vh;
+  }
+  .main-content {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box {
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.9),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+/* ============== RESTE ============== */
+.container {
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.container h1,
+p {
+  color: white;
+}
+.container h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* ================== Area Home Page Container ================== */
+.area-inicial {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/4cars/imgs/ks-rental.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* ================== texto da Home ================== */
+.texto-alugar p {
+  font-size: 15px;
+  font-family: var(--ff-primary);
+}
+.area-inicial .text-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* ============= Inputs de data e selecionar carros ============= */
+#input-home {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+#input-home input {
+  width: 200px;
+  height: 40px;
+  margin-right: 35px;
+}
+
+#ddselect {
+  width: 200px;
+  height: 45px;
+}
+
+/* ================== Botão "Alugar Agora" ================== */
+.btn {
+  background: #ff5c5c;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 25px;
+  margin-left: 35px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* =====================================
+
+===================================== */
+
+.area-carros {
+  background-image: url(/4cars/imgs/sl3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.area-carros h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+}
+.text-carros {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 33vh;
+}
+.titulo__text::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  margin: 0.3em auto 1em;
+  background: #fff;
+}
+.container-carros {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.container-carros img {
+  box-shadow: var(--bs);
+  max-width: 250px;
+}
+.carros p {
+  font-size: 20px;
+  font-family: var(--ff-primary);
+}
+.carros img:hover {
+  border: 2px solid #fff;
+}
+/* =====================================
+
+===================================== */
+
+@media (max-width: 860px) {
+  /* =========== Estilização do texto Tela menor =========== */
+  .text-home h1 {
+    font-size: 43px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+  }
+  .text-home p {
+    font-size: 15px;
+  }
+
+  /* ================== Container Começando no Top da pagina ================== */
+  .area-inicial {
+    justify-content: flex-start;
+  }
+
+  /* ============= Ajuste para "centralizar" o conteudo  grudado do topo =========== */
+  .area-inicial .text-home {
+    padding: 100px 20px 0px 20px;
+  }
+
+  /* ================== Estilização e posicionamento dos inputs e botão ================== */
+  #input-home {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  #input-home input {
+    height: 35px;
+    margin-right: 0px;
+  }
+  #ddselect {
+    height: 40px;
+  }
+  .texto-alugar {
+    margin-bottom: 20px;
+  }
+  .btn {
+    margin-left: 0px;
+    margin-top: 10px;
+    padding: 10px 10px;
+  }
+  /* ============= Lista de Carros ============= */
+
+  .area-carros h2 {
+    font-size: 25px;
+  }
+  .carros p {
+    font-size: 17px;
+  }
+  .text-carros {
+    height: 25vh;
+    padding-top: 110px;
+  }
+  .container-carros {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container-carros img {
+    max-width: 110px;
+  }
+}

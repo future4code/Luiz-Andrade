@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/4cars/css/home.css">
+    <link rel="stylesheet" href="/4cars/css/conteinercars.css">
+    <link rel="stylesheet" href="/4cars/css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a711148df2.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!-- ============= Burguer de menu ============= -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <!-- ============= Menu ============= -->
+        <a href="#"><img src="imgs/4cars22.png" alt="Logo-4Cars"></a>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#carros">Lista de Carros</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <section class="area-inicial" id="home">
+            <div class="text-home">
+                <h1>4CARS, Melhores automoveis</h1>
+                <p>
+                    Conforto, Segurança e Qualidade. Alugueis apartir de 40$/dia
+                </p>
+            </div>
+
+            <div id="input-home">
+                <div class="texto-alugar">
+                    <input type="date" id="data-pegar">
+                    <p>Data Alugar</p>
+                </div>
+
+                <div class="texto-alugar">
+                    <input type="date" id="data-deixar">
+                    <p>Data Entregar</p>
+                </div>
+
+                <div class="texto-alugar">
+                    <select id="ddselect">
+                        <option>Selecione o Automovel</option>
+                        <option>Chevrolet</option>
+                        <option>Ford</option>
+                        <option>Gol</option>
+                        <option>Nissan</option>
+                    </select>
+
+                    <p>Selecione um Automovel</p>
+                </div>
+
+                <a href="" class="btn">Alugar Agora</a>
+            </div>
+        </section>
+
+
+        <!-- Lista de Automoveis -->
+
+        <section class="area-carros" id="carros">
+            <div class="text-carros">
+                <h2 class="titulo__text">nossa lista de carros</h2>
+            </div>
+
+            <div class="container-carros">
+                <div class="carros">
+                    <a href=""><img src="imgs/ecomomico.jpg" alt="carro economico"></a>
+                    <p>Carros Economicos</p>
+                </div>
+
+                <div class="carros">
+                    <a href=""><img src="imgs/luxo.jpg" alt="carro de luxo"></a>
+                    <p>Carros de Luxo</p>
+                </div>
+
+                <div class="carros">
+                    <a href=""><img src="imgs/grande.jpg" alt="carro familia"></a>
+                    <p>Carros 5+ Passageiros</p>
+                </div>
+
+                <div class="carros">
+                    <a href=""><img src="imgs/oferta.jpg" alt="carro oferta"></a>
+                    <p>Ofertas</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contatos -->
+    <footer id="contato">
+        <div class="main-content">
+            <div class="left box">
+                <h2>Sobre nós</h2>
+                <div class="content">
+                    <p>A 4CARS foi fundada no ano de 2021, após anos de clientes tendo problemas para poder alugar um
+                        carro de forma rapida, pratica e segura, a 4CARS foi criada para antender esses interesses!.</p>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center box">
+                <h2>Endereço</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">São Paulo</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+021-4002-8922</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">4cars@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right box">
+                <h2>Entre em contato</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email *</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Menssagem *</div>
+                            <textarea rows="2" cols="25" required></textarea>
+                        </div>
+                        <div class="btn2">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
