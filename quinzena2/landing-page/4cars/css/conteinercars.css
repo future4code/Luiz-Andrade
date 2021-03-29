@@ -23,95 +23,11 @@ html {
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.9),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+
 /* ============== RESTE ============== */
 .container {
   margin-top: 100px;
@@ -141,6 +57,10 @@ p {
   flex-direction: column;
 }
 /* ================== texto da Home ================== */
+.texto-alugar p {
+  font-size: 15px;
+  font-family: var(--ff-primary);
+}
 .area-inicial .text-home {
   display: flex;
   flex-direction: column;
@@ -177,6 +97,7 @@ p {
   padding: 8px 25px;
   margin-left: 35px;
   font-weight: bold;
+  margin-bottom: 25px;
 }
 
 /* =====================================
@@ -201,8 +122,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 15vh;
-  padding-top: 100px;
+  height: 33vh;
 }
 .titulo__text::after {
   content: "";
@@ -212,15 +132,29 @@ p {
   margin: 0.3em auto 1em;
   background: #fff;
 }
+.container-carros {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.container-carros img {
+  box-shadow: var(--bs);
+  max-width: 250px;
+}
+.carros p {
+  font-size: 20px;
+  font-family: var(--ff-primary);
+}
+.carros img:hover {
+  border: 2px solid #fff;
+}
 /* =====================================
 
 ===================================== */
-
-.area-contat {
-  background-color: dimgray;
-  height: 100vh;
-  width: 100%;
-}
 
 @media (max-width: 860px) {
   /* =========== Estilização do texto Tela menor =========== */
@@ -240,24 +174,50 @@ p {
 
   /* ============= Ajuste para "centralizar" o conteudo  grudado do topo =========== */
   .area-inicial .text-home {
-    padding: 140px 20px 0 20px;
+    padding: 100px 20px 0px 20px;
   }
 
   /* ================== Estilização e posicionamento dos inputs e botão ================== */
   #input-home {
-    height: 40vh;
-    padding-top: 20px;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     padding-top: 20px;
   }
   #input-home input {
+    height: 35px;
     margin-right: 0px;
+  }
+  #ddselect {
+    height: 40px;
+  }
+  .texto-alugar {
     margin-bottom: 20px;
   }
   .btn {
     margin-left: 0px;
-    margin-top: 35px;
+    margin-top: 10px;
     padding: 10px 10px;
+  }
+  /* ============= Lista de Carros ============= */
+
+  .area-carros h2 {
+    font-size: 25px;
+  }
+  .carros p {
+    font-size: 17px;
+  }
+  .text-carros {
+    height: 25vh;
+    padding-top: 110px;
+  }
+  .container-carros {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container-carros img {
+    max-width: 110px;
   }
 }

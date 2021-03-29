@@ -259,28 +259,27 @@ img {
 
 /* footer */
 
-.footer{
+.footer {
   background-color: rgb(19, 20, 20);
   color: #ffffff;
   height: 400px;
-  
 }
-.footer .footer-content{
+.footer .footer-content {
   height: 400px;
   display: flex;
 }
-.footer .footer-content .footer-section{
+.footer .footer-content .footer-section {
   flex: 1;
   padding: 25px;
 }
 
-form{
+form {
   padding: 60px;
 }
-form input{
+form input {
   display: block;
 }
-.send-btn{
+.send-btn {
   font-weight: var(--fw-bold);
   font-family: monospace;
   font-size: 17px;
@@ -294,6 +293,6 @@ form input{
   border-radius: 20px;
   box-shadow: 4px 10px 30px rgba(8, 8, 8, 0.2);
 }
-.emailbox{
+.emailbox {
   padding: 23px;
 }
