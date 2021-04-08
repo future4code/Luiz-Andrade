@@ -24,7 +24,7 @@ let somaComp = Number(primeiraCartaComputador.valor) + Number(segundaCartaComput
 
 // Pergunta se o User quer jogar. 
 //Se sim o jogo dá as duas cartas para o User e Comp.
-if(confirm("Quer iniciar uma nova jogada?")){
+if(("Quer iniciar uma nova jogada?")){
       true === console.log("Bem vindo ao jogo de Blackjack!")
       true === console.log("Usuario - Cartas:" + " " + primeiraCartaUser.texto + " " + segundaCartaUser.texto + " - " + somaUser);
       true === console.log("Computador - Cartas:" + " " + primeiraCartaComputador.texto + " " + segundaCartaComputador.texto + " - " + somaComp);        

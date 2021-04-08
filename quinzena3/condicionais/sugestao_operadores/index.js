@@ -173,3 +173,16 @@ não resultará "0".
      console.log("Escolha outro filme")
  }
  */
+
+ let listaArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  
+
+    for (let i=0; i<listaArray.length; i++){
+      let valor = listaArray[i]; 
+      if(valor == 1) listaArray.push(16);
+      console.log(valor)
+    }  
+  
+    for(var i = 0; i < listaArray.length; i += 1){
+      console.log(listaArray[i] = '' + listaArray[i]);
+   }

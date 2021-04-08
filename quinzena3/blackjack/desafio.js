@@ -10,10 +10,21 @@
  * 
  * 
  */
-const carta = comprarCarta();
+const cartaRan1 = comprarCarta();
+const cartaRan2 = comprarCarta();
+
+let cartaRan3 = comprarCarta()
+let cartaRan4 = comprarCarta();
+
+let somaUserRan = Number(cartaRan1.valor) + Number(cartaRan2.valor);
+let somaCompRan = Number(cartaRan3.valor) + Number(cartaRan4.valor);
 
 if (primeiraCartaUser.valor === 11 && segundaCartaUser.valor === 11 || primeiraCartaComputador.valor === 11 && segundaCartaComputador.valor === 11){
    console.log("Novamente Sorteado")
-   console.log("Usuario - Cartas:" + " " + carta.texto + " " + segundaCartaUser.texto + " - " + somaUser);
-   console.log("Computador - Cartas:" + " " + primeiraCartaComputador.texto + " " + carta.texto + " - " + somaComp);
+   console.log("Usuario - Cartas:" + " " + cartaRan1.texto + " " + cartaRan2.texto + " - " + somaUserRan);
+   console.log("Computador - Cartas:" + " " + cartaRan3.texto + " " + cartaRan4.texto + " - " + somaCompRan);
+}
+
+if (confirm("Suas Cartas são " + primeiraCartaUser.texto + " " + segundaCartaUser.texto + "." + " A carta revelada do computador é " + primeiraCartaComputador.texto + "\n" + "Deseja comprar mais uma carta?")){
+   
 }
