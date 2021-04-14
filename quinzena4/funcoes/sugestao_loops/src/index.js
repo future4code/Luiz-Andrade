@@ -75,24 +75,26 @@ mensagem() */
 
 //6
 const array1 = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
-/*
-function determinanteDeElementos(array){
+
+// A)
+/* function determinanteDeElementos(array){
     for (let i = 0; i < array.length; i++){
         console.log(array.length)
     }
 }
-determinanteDeElementos(array1) */
+determinanteDeElementos(array1)  */
 
- function parOuImpar(num1){
+//B)
+  /* function parOuImpar(num1){
     if(num1 % 2 === 0){
         return true
     } else{
         return false
     }
-}
+}  */
 
-/*
- let contador = 0
+//C
+/*  let contador = 0
 function numerosPares(pares){
     for (let i = 0; i < pares.length; i++){
         if(pares[i] % 2 === 0){
@@ -103,16 +105,18 @@ function numerosPares(pares){
 }
 numerosPares(array1)    */
 
-const numeroPar = parOuImpar()
-let contador = 0
-let arrayTeste = [1, 2, 3, 4]
-function numerosPares(pares){
-    for (let i = 0; i < pares.length; i++){
-        if(numeroPar){
-            contador++
-        }
-    }
-    
-    console.log("são " + contador + " números pares")
+// D)
+/* 
+function itemD(array) {
+    let contador = 0
+    for (let i = 0; i < array.length; i++) {
+        const numeroPar = parOuImpar(array[i])
+      if (numeroPar) {
+         contador++
+      }
+
+  }
+  return contador
 }
-numerosPares(arrayTeste) 
+console.log(itemD(array1)) */
+
