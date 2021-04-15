@@ -85,14 +85,13 @@ const array1 = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
 determinanteDeElementos(array1)  */
 
 //B)
-  /* function parOuImpar(num1){
+   function parOuImpar(num1){
     if(num1 % 2 === 0){
         return true
     } else{
         return false
     }
-}  */
-
+}  
 //C
 /*  let contador = 0
 function numerosPares(pares){
@@ -120,3 +119,40 @@ function itemD(array) {
 }
 console.log(itemD(array1)) */
 
+
+//Desafio Exercicio 2
+
+// A
+/* 
+function exercicio2(array){
+    let guardaNumeros = []
+    for (numero of array){
+        if(numero  % 2 === 0){
+            guardaNumeros.push(numero * 2)
+        }
+    }
+    return guardaNumeros
+}
+console.log(exercicio2(numeros)) */
+
+
+// B e C 
+/* const numeros = [0, 8, 23, 16, 10, 15, 41, 12, 13]
+function exercicio2B(array){
+  let maior = array [0];
+  for (let i = 0; i < array.length; i++){
+   if(maior < array[i]){
+       maior = array[i];
+
+   }
+}
+// Descomente o codigo abaixo e terá a resposta da questão C
+//return 'O index do maior numero da Array é ' + array.indexOf(maior)
+
+// Descomente o codigo abaixo e terá a resposta da questão B
+//return 'O maior numero da Array é '  + maior
+}  
+console.log(exercicio2B(numeros))  */
+
+
+const numeros = [0, 8, 23, 16, 10, 15, 41, 12, 13]
