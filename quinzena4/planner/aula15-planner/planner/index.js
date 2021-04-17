@@ -15,6 +15,7 @@ function criaTarefa(){
      // desafio 1 
      if(texto === " "){
         alert("Nenhuma tarefa adicionada!")
+        return
      }
 }
 
