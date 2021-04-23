@@ -109,10 +109,37 @@ function checaTriangulo(a, b, c) {
 
 function comparaDoisNumeros(num1, num2) {
    // implemente sua lógica aqui
+   let gurdaMenorValor = []
 
+   const objetoGuarda = {
+      maiorNumero: '',
+      maiorDivisivelporMenor: '',
+      diferenca: '',
+   }
+
+   // 9) i
+   if(num1 > num2){
+      objetoGuarda.maiorNumero = num1
+      gurdaMenorValor.push(num2)
+
+   } else if (num2 > num1){
+      objetoGuarda.maiorNumero = num2
+      gurdaMenorValor.push(num1)
+   }
+
+   // 9) ii
+   if(objetoGuarda.maiorNumero % gurdaMenorValor[0] === 0){
+      objetoGuarda.maiorDivisivelporMenor = true
+   } else {
+      objetoGuarda.maiorDivisivelporMenor = false
+   }
+
+   // 9) iii
+   const dif = Number(objetoGuarda.maiorNumero) - Number(gurdaMenorValor[0])
+   objetoGuarda.diferenca = dif
+
+   return objetoGuarda
 }
-
-
 
 // Exercício 10
 
@@ -130,6 +157,13 @@ function ordenaArray(array) {
 
 function filmeFavorito() {
    // implemente sua lógica aqui
+   const filme = {
+     nome: "O Diabo Veste Prada",
+     ano: 2006,
+     diretor: "David Frankel",
+     atores: ["Meryl Streep" , "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+   }
+   return filme
 }
 
 // Exercício 13
