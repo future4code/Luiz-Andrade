@@ -25,13 +25,26 @@ function imprimirExtrato(){
     let gastoAlimentacao = 0
     let gastoUtilidades = 0
     let gastoViagem = 0
-
-
+  
+    arrDespesas.forEach((element) => {
+     if(element.tipo === "alimentação"){
+         gastoAlimentacao += element.valor
+     } else if (element.tipo === "utilidades"){
+        gastoUtilidades += element.valor
+     } else if (element.tipo === "viagem"){
+        gastoViagem += element.valor
+     }
+    })
+    gastoTotal = gastoAlimentacao + gastoUtilidades + gastoViagem
+    
+    
+    
     // AQUI VEM A IMPLEMENTAÇÃO
 
     divExtrato.innerHTML = `<p>Extrato: Gasto Total: R$${gastoTotal} | Alimentação: R$${gastoAlimentacao} | 
                                         Utilidades: R$${gastoUtilidades} | Viagem: R$${gastoViagem}</p>`
 }
+
 
 
 function limparFiltros() {
