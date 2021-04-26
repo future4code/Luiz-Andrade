@@ -142,10 +142,12 @@ function comparaDoisNumeros(num1, num2) {
 }
 
 // Exercício 10
-
 function segundoMaiorEMenor(array) {
    // implemente sua lógica aqui
-}
+
+    }
+
+
 
 //Exercício 11
 
@@ -163,27 +165,46 @@ function filmeFavorito() {
      diretor: "David Frankel",
      atores: ["Meryl Streep" , "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
    }
-   return filme
+   return filme   
 }
 
 // Exercício 13
 
 function imprimeChamada() {
    // implemente sua lógica aqui
+    const filme = {
+      nome: "O Diabo Veste Prada",
+      ano: 2006,
+      diretor: "David Frankel",
+      atores: ["Meryl Streep" , "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+    }
+
+    return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores[0]}, ${filme.atores[1]}, ${filme.atores[2]}, ${filme.atores[3]}.` 
 }
 
 // Exercício 14
 
 function criaRetangulo(lado1, lado2) {
    // implemente sua lógica aqui
+  let objret = {
+     largura: lado1,
+     altura: lado2,
+     perimetro: 2 * (lado1 + lado2),
+     area: lado1 * lado2,
+  }
+  return objret
 }
 
 // Exercício 15
 
 function anonimizaPessoa(pessoa) {
    // implemente sua lógica aqui
+   const anonPessoa = {
+      ...pessoa,
+      nome: String('ANÔNIMO')
+   }
+   return anonPessoa
 }
-
 // Exercício 16
 
 const arrayDePessoas = [
@@ -193,34 +214,72 @@ const arrayDePessoas = [
   { nome: "Artur", idade: 89 } 
 ]
 
+
 // Exercício 16, letra A
 
 function maioresDe18(arrayDePessoas) {
    // implemente sua lógica aqui
+  let arrayMaiores = []
+      arrayDePessoas.filter ((elemento) => {
+     if(elemento.idade >= 18){
+         arrayMaiores.push(elemento)
+     }
+  })
+  return arrayMaiores
 }
+
 
 // Exercício 16, letra B
 
 function menoresDe18(arrayDePessoas) {
    // implemente sua lógica aqui
+   let arrayMenores = []
+      arrayDePessoas.filter ((elemento) => {
+      if(elemento.idade <= 18){
+          arrayMenores.push(elemento)
+      }
+   })
+   return arrayMenores
 }
 
 // Exercício 17, letra A
+const array = [1, 2, 3, 4, 5, 6]
+
 
 function multiplicaArrayPor2(array) {
    // implemente sua lógica aqui
+   let multPorTwo = array.map((elemento) => {
+      return elemento * 2
+   })
+   return multPorTwo
 }
+ 
 
 // Exercício 17, letra B
 
 function multiplicaArrayPor2S(array) {
   // implemente sua lógica aqui
+  let toString = array.map((elemento) => {
+       const ele = elemento * 2
+       return ele + ""
+   })
+   return toString
 }
 
 // Exercício 17, letra C
 
 function verificaParidade(array) {
    // implemente sua lógica aqui
+   let guardaParidade = []
+     array.map((elemento) => {
+     if(elemento % 2 === 0){
+        guardaParidade.push(`${elemento} é par`)
+     } else if ( elemento % 2 === 1) {
+      guardaParidade.push(`${elemento} é impar`)
+     }
+  })
+  return guardaParidade
+
 }
 
 // Exercício 18
@@ -236,15 +295,34 @@ const pessoas = [
 
 //Exercício 18, letra A
 
-function retornaPessoasAutorizadas(pessoas) {
+
+function retornaPessoasAutorizadas() {
    // implemente sua lógica aqui
+   let temPermição = []
+     pessoas.filter((people) => {
+     if(people.altura >= 1.50 && people.idade > 14 && people.idade < 60 ){
+      temPermição.push(people)
+     }
+
+   })
+   return temPermição
 }
 
 
 // Exercício 18, letra B
 
-function retornaPessoasNaoAutorizadas(pessoas) {
+function retornaPessoasNaoAutorizadas() {
    // implemente sua lógica aqui
+   let naoTemPermição = []
+     pessoas.filter((people) => {
+     if(people.altura >= 1.50 && people.idade > 14 && people.idade < 60 ){
+        
+     }else {
+        naoTemPermição.push(people)
+     }
+
+   })
+   return naoTemPermição
 }
 
 //Exercício 19
