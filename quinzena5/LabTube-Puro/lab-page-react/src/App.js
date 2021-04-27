@@ -1,5 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import search from './search.png';
+import video from './cam.png';
+import app from './app.png';
+import bell from './bell.png';
+import perfil from './racoon.jpeg'
+
+
 
 function App() {
   const titulo = "Título do vídeo"
@@ -12,7 +19,26 @@ function App() {
     <div><div className="tela-inteira">
     <header>
         <h1>Lab Tube</h1>
+        <form className = "search-bar">
         <input type="text" placeholder="Busca" id="campoDeBusca" />
+        <button type= "submit" className = "search-btn">
+            <img src = {search} />
+        </button>
+        </form>
+        <div className = "menu-icons">
+            <a href = "#">
+                <img src= {video} />
+            </a>
+            <a href = "#">
+                <img src= {app} />
+            </a>
+            <a href = "#">
+                <img src= {bell} />
+            </a>
+            <a href = "#">
+                <img className ="menu-channel" src= {perfil} />
+            </a>
+        </div>
     </header>
 
     <main>

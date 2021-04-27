@@ -19,6 +19,39 @@ header {
   height: 10%;
 }
 
+.search-bar {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 10rem 0 20rem;
+}
+.search-btn {
+  display: flex;
+  align-items: center;
+  padding: 0 1.25rem;
+  border: 1px solid #777;
+  background-color: #f8f8f8;
+}
+
+.menu-icons {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+}
+
+.menu-channel {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #aaa;
+}
+
+#campoDeBusca {
+  width: 70%;
+  padding: 0.4em;
+  border: 1px solid #777;
+}
+
 main {
   min-height: 80%;
   display: flex;
