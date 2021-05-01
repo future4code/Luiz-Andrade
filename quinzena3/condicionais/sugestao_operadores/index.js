@@ -91,26 +91,26 @@ não resultará "0".
       b)  O preço da fruta maçã é  R$ 2.25
       c) O preço da fruta fruta pera é R$ 5)*/
 
-  /* 3. a) A primeira linha deixa claro que o valor digitado
-  pelo usuario terá de ser um tipo Number 
-        b) se digitar 10, irá passar no filtro e irá imprimir no 
-        console "Esse numero passou no teste" e também irá imprimir 
-        "essa mensagem é secreta!!!"
-        caso digite -10 não irá aparecer nada
-        c) acredito que haverá um erro caso digite um numero
-        menor que 10 pois a variavel "mensagem" dará o erro
-        de "nao declarada no console"  */
+/* 3. a) A primeira linha deixa claro que o valor digitado
+pelo usuario terá de ser um tipo Number 
+      b) se digitar 10, irá passar no filtro e irá imprimir no 
+      console "Esse numero passou no teste" e também irá imprimir 
+      "essa mensagem é secreta!!!"
+      caso digite -10 não irá aparecer nada
+      c) acredito que haverá um erro caso digite um numero
+      menor que 10 pois a variavel "mensagem" dará o erro
+      de "nao declarada no console"  */
 
 
- // 4.
- /* let idadeUser = Number(prompt("Qual a sua idade?"))
- if(idadeUser >= 18){
-     console.log("Você pode dirigir")
- } else{
-     console.log("Você não pode dirigir")
- } */
- 
- // 5.
+// 4.
+/* let idadeUser = Number(prompt("Qual a sua idade?"))
+if(idadeUser >= 18){
+    console.log("Você pode dirigir")
+} else{
+    console.log("Você não pode dirigir")
+} */
+
+// 5.
 /* let turnoEstudante = prompt("Insira 'M' para matutino,  'V' para vespetino ou 'N' para noturno!.")
 
  if(turnoEstudante === 'm'){
@@ -120,69 +120,172 @@ não resultará "0".
  }else{
      console.log("Boa noite")
  }  */
- 
- // 6.
- /* let turnoEstudante = prompt("Insira 'M' para matutino,  'V' para vespetino ou 'N' para noturno!.")
- switch (turnoEstudante){
-  case 'm':
-     console.log('Bom Dia')
+
+// 6.
+/* let turnoEstudante = prompt("Insira 'M' para matutino,  'V' para vespetino ou 'N' para noturno!.")
+switch (turnoEstudante){
+ case 'm':
+    console.log('Bom Dia')
+    break
+ case 'v':
+     console.log('Boa Tarde')
      break
-  case 'v':
-      console.log('Boa Tarde')
+  case 'n':
+      console.log('Boa noite')   
       break
-   case 'n':
-       console.log('Boa noite')   
-       break
- }  */
+}  */
 
- // 7.
- /* let generoFilm = prompt("Qual genero de filme você quer assistir?")
- let precoFilm = Number(prompt("Qual valor você teria disponivel para assistir este filme?"))
+// 7.  && Desafio 8.
+/* 
+let generoFilm = prompt("Qual genero de filme você quer assistir?")
+let precoFilm = Number(prompt("Qual valor você teria disponivel para assistir este filme?"))
+let acompanhamentoSnack = prompt("Qual snack você quer comprar?(pipoca, chocolate, doces, etc)")
+
+let snack;
+snack = acompanhamentoSnack
  
- let resulPreco = [precoFilm]
+switch(acompanhamentoSnack) {
+  case "pipoca":
+  break;
+  case "chocolate":
+  break;
+  case "doces":
+  break;
+}
 
- switch(generoFilm) {
-    case "ação":
-      resulPreco = 20;
-      break;
 
-    case "aventura":
-        resulPreco = 18;
-      break;
+let resulPreco = [precoFilm]
 
-    case "comedia":
-        resulPreco = 29;
-        break;
+switch(generoFilm) {
+   case "ação":
+     resulPreco = 20;
+     break;
 
-    case "documentario":
-      resulPreco = 30;
-      break;
+   case "aventura":
+       resulPreco = 18;
+     break;
 
-    case "ficção científica":
-        resulPreco = 14;
-      break;
+   case "comedia":
+       resulPreco = 29;
+       break;
 
-    case "fantasia":
-        resulPreco = 15;
-      break;
- }
+   case "documentario":
+     resulPreco = 30;
+     break;
 
- if(generoFilm === "fantasia" && precoFilm <= 15){
-     console.log("Bom filme")
- } else{
-     console.log("Escolha outro filme")
- }
- */
+   case "ficção científica":
+       resulPreco = 14;
+     break;
 
+   case "fantasia":
+       resulPreco = 15;
+     break;
+}
+
+if(generoFilm === "fantasia" && precoFilm <= 15){
+    console.log("Bom filme e com " + snack)
+} else{
+    console.log("Escolha outro filme")
+}
+*/
+
+
+let perguntaNomeCompleto = prompt("Qual seu nome completo?")
+let perguntaTipoDoJogo = prompt("Escolha a o tipo do jogo (IN OU DO)")
+let perguntarEtapaDoJogo = prompt("Escolha a etapa do jogo (SF, DT ou FI)")
+let perguntaCategoria = Number(prompt("Escolha categoria (1, 2, 3 ou 4)"))
+let perguntaQuantidadeIngresso = Number(prompt("Quantos ingressos?"))
+
+let categoria;
+let total;
+let tipoDoJogo;
+let etapaDoJogo;
+
+
+switch (perguntarEtapaDoJogo){
+  case "SF":
+  if (perguntaCategoria === 1){
+    categoria = 1320
+  } else if (perguntaCategoria === 2) {
+    categoria = 880
+  }else if (perguntaCategoria === 3) {
+    categoria = 550
+  }else if (perguntaCategoria === 4) {
+    categoria = 220
+  }
+  etapaDoJogo = "Semifinais"
+}
+
+switch (perguntarEtapaDoJogo){
+  case "DT":
+  if (perguntaCategoria === 1){
+    categoria = 660
+  } else if (perguntaCategoria === 2) {
+    categoria = 440
+  }else if (perguntaCategoria === 3) {
+    categoria = 330
+  }else if (perguntaCategoria === 4) {
+    categoria = 170
+  }
+  etapaDoJogo = "Descisão do 3º lugar"
+}
+
+switch (perguntarEtapaDoJogo){
+  case "FI":
+  if (perguntaCategoria === 1){
+    categoria = 1980
+  } else if (perguntaCategoria === 2) {
+    categoria = 1320
+  }else if (perguntaCategoria === 3) {
+    categoria = 880
+  }else if (perguntaCategoria === 4) {
+    categoria = 330
+  }
+  etapaDoJogo = "Finais"
+}
+
+if (perguntaTipoDoJogo === "IN"){
+ total = (categoria * perguntaQuantidadeIngresso) / 4.10;
+ console.log(total)
+} else {
+  total = perguntaQuantidadeIngresso * categoria
+  console.log(total)
+}
+
+if(perguntaTipoDoJogo === "IN"){
+  tipoDoJogo = "Internacional"
+} else {
+  tipoDoJogo = "Nacional"
+}
+
+console.log("--Dados da compra--")
+console.log("Nome do cliente: " + perguntaNomeCompleto)
+console.log("Tipo do jogo: " + tipoDoJogo)
+console.log("Etapa do jogo: " + etapaDoJogo)
+console.log("Categoria: " + perguntaCategoria)
+console.log("Quantidade de Ingressos: " + perguntaQuantidadeIngresso)
+console.log("--Valores--")
+console.log("Valor do ingresso:" + "R$" + categoria )
+console.log("Valor total: " + "R$" + total)
+
+
+
+
+
+
+
+/*
  let listaArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-  
+
 
     for (let i=0; i<listaArray.length; i++){
-      let valor = listaArray[i]; 
+      let valor = listaArray[i];
       if(valor == 1) listaArray.push(16);
       console.log(valor)
-    }  
-  
+    }
+
     for(var i = 0; i < listaArray.length; i += 1){
       console.log(listaArray[i] = '' + listaArray[i]);
    }
+
+   */
