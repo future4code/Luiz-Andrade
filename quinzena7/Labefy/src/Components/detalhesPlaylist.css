@@ -1,0 +1,12 @@
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.conatiner-detalhes {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+}
