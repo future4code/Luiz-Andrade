@@ -4,27 +4,6 @@
   padding: 0;
 }
 
-.navbar {
-  display: flex;
-  width: 100%;
-  height: 10%;
-}
-.nomeApp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: bolder;
-  padding-left: 35px;
-  font-size: 25px;
-  color: rgba(255, 107, 107, 0.8);
-}
-.macthes {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 .photos-and-actions {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,46 @@
+.TripDetailsPage {
+  background-color: white;
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Container_detail {
+  border: 1px solid black;
+  width: 40vw;
+  height: 90vh;
+}
+
+.voltar_detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 10vh;
+  width: 9vw;
+  margin: 10px 0px 20px 30px;
+}
+.informacoes {
+  border: 1px solid black;
+  height: 55vh;
+  margin: 0px 30px 0px 30px;
+}
+
+.container_bottom_detail {
+  height: 17vh;
+  margin: 10px 30px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.candidatos,
+.aprovados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 17vh;
+  border: 1px solid black;
+}

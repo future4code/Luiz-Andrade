@@ -4,7 +4,7 @@ import { styled } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import ClearIcon from '@material-ui/icons/Clear';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
+import TrocaTela from '../Components/TrocaTela';
 
 
 const MeuBotaoGostei = styled(IconButton)({
@@ -41,16 +41,9 @@ const BtnStyledlike = styled(FavoriteIcon)({
   fontSize: 40
 })
 
-const IrMatches = styled(QuestionAnswerIcon)({
-  fontSize: 35,
-  color: 'rgba(26, 30, 30, .2)',
-
-  '&:hover': {
-    color:'rgba(26, 30, 30, .7)',
-  }
-})
 
 function TelaInicial(props) {
+  
     const onNaoGostei = () =>{
      props.getProfileToChoose()
     }
@@ -75,17 +68,10 @@ function TelaInicial(props) {
     }
 
     return (
-      <div className="aa"> 
-
-        <nav className="navbar">
-          <div className="nomeApp">
-          <h1>astromatch</h1>
-          </div>
-
-          <div className="macthes">
-          <IrMatches onClick={props.onClickButton}>Matches</IrMatches>
-          </div>
-        </nav>
+      <div className="aa">
+       
+       
+      <TrocaTela onClickButton={props.onClickButton}/>
 
         <div className="photos-and-actions">
           

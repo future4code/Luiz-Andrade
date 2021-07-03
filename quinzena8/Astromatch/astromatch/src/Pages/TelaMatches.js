@@ -7,7 +7,7 @@ function TelaMatches(props) {
  }, [])
 
   return (
-    <div className="App">
+    <div className="TelaMatches">
       <h1>Oi</h1> <button onClick={props.onClickButton}>Voltar</button>
       {props.listaMatches.map((pessoa) => (
        <div>

@@ -80,7 +80,11 @@ function App() {
   return (
     <div className="App">
       <div className="Container">
-  
+      <nav className="navbar">
+          <div className="nomeApp">
+          <h1>astromatch</h1>
+          </div>
+      </nav>    
      {trocaPagina()}
     
      {/* <Reseta putReseta={putReseta} /> */}
